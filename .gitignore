@@ -1,0 +1,24 @@
+log
+
+# dépendances composer
+/vendor
+
+# WordPress Core
+wp
+
+# Ignorer tout le répertoire "wp-content" sauf les répertoires "mu-plugins", "plugins" et "themes"
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignorer tout à l'intérieur du répertoire "plugins" sauf nos plugins maison
+wp-content/plugins/*
+#!wp-content/plugins/my-custom-plugin-1/
+#!wp-content/plugins/my-custom-plugin-2/
+
+# Ignorer tout à l'intérieur du répertoire "themes" sauf nos thèmes maison
+wp-content/themes/*
+#!wp-content/themes/my-custom-theme-1/
+#!wp-content/themes/my-custom-theme-2/
+

@@ -1,0 +1,30 @@
+{
+    "name": "aerogus/wordpress-base",
+    "description": "WordPress base",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Guillaume Seznec",
+            "email": "guillaume@seznec.fr"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "johnpbloch/wordpress": "5.7.1",
+        "composer/installers": "1.10.0"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "wp-content/plugins/{$name}": ["type:wordpress-plugin"],
+            "wp-content/themes/{$name}": ["type:wordpress-theme"],
+            "wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"]
+        }
+    }
+}
