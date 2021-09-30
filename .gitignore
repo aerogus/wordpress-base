@@ -1,6 +1,8 @@
+.env
+
 log
 
-# dépendances composer
+# dépendances php (composer)
 /vendor
 
 # WordPress Core
@@ -12,13 +14,12 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 
-# Ignorer tout à l'intérieur du répertoire "plugins" sauf nos plugins maison
+# Ignorer tout à l'intérieur du répertoire "plugins" sauf nos plugins maison à lister explicitement
 wp-content/plugins/*
 #!wp-content/plugins/my-custom-plugin-1/
 #!wp-content/plugins/my-custom-plugin-2/
 
-# Ignorer tout à l'intérieur du répertoire "themes" sauf nos thèmes maison
+# Ignorer tout à l'intérieur du répertoire "themes" sauf nos thèmes maison à lister explicitement
 wp-content/themes/*
 #!wp-content/themes/my-custom-theme-1/
 #!wp-content/themes/my-custom-theme-2/
-

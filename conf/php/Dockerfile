@@ -1,4 +1,4 @@
-FROM php:7.4-fpm
+FROM php:8.0.11-fpm
 
 LABEL maintainer="Guillaume Seznec <guillaume@seznec.fr>"
 
@@ -13,4 +13,3 @@ COPY php.ini /usr/local/etc/php/
 
 RUN mkdir /var/log/php \
   && chmod 777 /var/log/php
-

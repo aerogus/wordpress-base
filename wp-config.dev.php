@@ -18,7 +18,7 @@ define('WP_CONTENT_DIR', __DIR__ . '/wp-content');
 define('DB_NAME',     'wordpress');
 define('DB_USER',     'wordpress');
 define('DB_PASSWORD', 'changeme');
-define('DB_HOST',     'mysql');
+define('DB_HOST',     'wordpress_mariadb');
 define('DB_CHARSET',  'utf8');
 define('DB_COLLATE',  '');
 $table_prefix  = 'wp_';
