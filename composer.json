@@ -16,8 +16,8 @@
     ],
     "require": {
         "php": ">=7.3",
-        "johnpbloch/wordpress": "5.8.1",
-        "composer/installers": "2.0.1"
+        "johnpbloch/wordpress": "6.0.2",
+        "composer/installers": "2.2.0"
     },
     "extra": {
         "wordpress-install-dir": "wp",
@@ -25,6 +25,12 @@
             "wp-content/plugins/{$name}": ["type:wordpress-plugin"],
             "wp-content/themes/{$name}": ["type:wordpress-theme"],
             "wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true
         }
     }
 }
