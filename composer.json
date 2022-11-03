@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": ">=7.3",
-        "johnpbloch/wordpress": "6.0.3",
+        "johnpbloch/wordpress": "6.1.0",
         "composer/installers": "2.2.0"
     },
     "extra": {
